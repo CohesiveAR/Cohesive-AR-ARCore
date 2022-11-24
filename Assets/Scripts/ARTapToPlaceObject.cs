@@ -2,17 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent(typeof(ARRaycastManager))]
 public class ARTapToPlaceObject : MonoBehaviour
 {
-    [SerializeField]
-    Canvas canvas;
-    [SerializeField]
-    Camera arCamera;
+    [SerializeField] Canvas canvas;
+    [SerializeField] Camera arCamera;
+    [SerializeField] TextMeshProUGUI placeMarkerText;
     public GameObject patchGO;
     public Vector3[] textureScreenVertices = new Vector3[4];
     private GameObject patch;
@@ -23,7 +24,7 @@ public class ARTapToPlaceObject : MonoBehaviour
     private void Awake()
     {
         aRRaycastManager = GetComponent<ARRaycastManager>();
-        canvas.gameObject.SetActive(false);
+        // canvas.gameObject.SetActive(false);
         gameObject.GetComponent<CameraImageExample>().enabled = false;
     }
 
@@ -34,7 +35,7 @@ public class ARTapToPlaceObject : MonoBehaviour
             
             RaycastHit hit;
             Ray ray = arCamera.ScreenPointToRay(touchPosition);
-            if (Physics.Raycast(ray, out hit)&&hit.collider != null&&(hit.collider.gameObject.name.StartsWith("Patch")||hit.collider.gameObject.name.StartsWith("PreviewTexture"))) {
+            if (Physics.Raycast(ray, out hit)&&hit.collider != null&&(hit.collider.gameObject.name.StartsWith("patch"))) {
                 touchPosition  = default;
                 return false;                            
             }
@@ -42,6 +43,17 @@ public class ARTapToPlaceObject : MonoBehaviour
         }
         touchPosition  = default;
         return false;
+    }
+
+    void Start(){
+        patch = GameObject.Find("patch");
+
+        if(patch == null){
+            placeMarkerTextSet();
+        }
+        else{
+            donePlacedMarkerText();
+        }
     }
 
     void Update()
@@ -56,16 +68,19 @@ public class ARTapToPlaceObject : MonoBehaviour
 
             if(patch==null) {
                 patch = Instantiate(patchGO, hitPose.position, hitPose.rotation);
+                patch.name = "patch";
                 canvas.gameObject.SetActive(true);
-                canvas.GetComponentInChildren<RawImage>().enabled = false;
-                canvas.GetComponentInChildren<Button>().enabled = true;
+                donePlacedMarkerText();
+                // DontDestroyOnLoad(patch);
             }
-            
         }      
-
     }
 
-    public void scanTexture(){
+    public void doneScanning(){
+        SceneManager.LoadSceneAsync("WelcomeScreen");
+    }
+
+    void scanTextureUtil(){
         Matrix4x4 localToWorld = patch.transform.localToWorldMatrix;
         MeshFilter mf = patch.GetComponent<MeshFilter>();
         for(int i = 12; i<16; ++i) {
@@ -74,10 +89,33 @@ public class ARTapToPlaceObject : MonoBehaviour
             textureScreenVertices[i-12] = screenPos;
         }
         
+        placeMarkerTextSet();
+
         Destroy(patch);
-        canvas.GetComponentInChildren<Button>().enabled = false;
-        canvas.GetComponentInChildren<RawImage>().enabled = true;
-        gameObject.GetComponent<CameraImageExample>().enabled = true;   
+        gameObject.GetComponent<CameraImageExample>().enabled = true;  
+        // Debug.Log("scanTezture") ;
+    }
+    public void replaceMarker(){
+        placeMarkerTextSet();
+        Destroy(patch);
     }
 
+    public void scanTexture(){
+        if(patch==null) return;
+        patch.GetComponent<scanAnimation>().scanClicked = true;
+        Invoke("scanTextureUtil", 3);
+    }
+
+    private void placeMarkerTextSet()
+    {
+        Color blue = new Color(0.215f, 0.6f, 1, 0.7f);
+        placeMarkerText.color = blue;
+        placeMarkerText.text = "Place the Marker before scanning.";
+    }
+    private void donePlacedMarkerText()
+    {
+        Color white = new Color(1, 1, 1, 0.7f);
+        placeMarkerText.color = white;
+        placeMarkerText.text = "Marker placed. Click on Scan Texture to edit and load into Texture DB";    
+    }
 }

@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ExampleAssets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/WelcomeScreen.unity
+    guid: 41579e28302cbcd43942f503dc044bd1
+  - enabled: 1
+    path: Assets/Scenes/SurfaceCapture.unity
+    guid: 2045a14db95d9b348a587aaada02b061
+  - enabled: 1
+    path: Assets/Scenes/ManipulateObject.unity
+    guid: 26f451c1e03e3704ca331b7fc41b9404
+  - enabled: 1
+    path: Assets/Scenes/OpenCV.unity
+    guid: 99d85b640fd09274b88b3c58d13c7187
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}

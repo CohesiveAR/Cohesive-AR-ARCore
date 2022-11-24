@@ -23,6 +23,8 @@ struct InterfaceFuncInvoker2
 	}
 };
 
+// System.Action`1<System.Threading.AsyncLocalValueChangedArgs`1<System.Object>>
+struct Action_1_t8962721928CB782B8FD4B406517D3C3ABD5CB4A8;
 // System.Action`1<System.Object>
 struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
 // System.Collections.Generic.ArraySortHelper`1<UnityEngine.InputSystem.HID.HIDParser/HIDReportData>
@@ -892,6 +894,8 @@ struct ArraySortHelper_2_t4AF8C900C0EE82707F837449B01BEABC8002A653_StaticFields
 // System.Threading.AsyncLocal`1<System.Object>
 struct AsyncLocal_1_tD4F5685126A347B4A80FB2617D319335EFB96571  : public RuntimeObject
 {
+	// System.Action`1<System.Threading.AsyncLocalValueChangedArgs`1<T>> System.Threading.AsyncLocal`1::m_valueChangedHandler
+	Action_1_t8962721928CB782B8FD4B406517D3C3ABD5CB4A8* ___m_valueChangedHandler_0;
 };
 
 // System.Collections.Generic.Comparer`1<System.Object>
@@ -1295,6 +1299,17 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 // Native definition for COM marshalling of System.ValueType
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
 {
+};
+
+// System.Threading.AsyncLocalValueChangedArgs`1<System.Object>
+struct AsyncLocalValueChangedArgs_1_t420F76E78415A26DEBFF7BD06061957A8A9422E5 
+{
+	// T System.Threading.AsyncLocalValueChangedArgs`1::<PreviousValue>k__BackingField
+	RuntimeObject* ___U3CPreviousValueU3Ek__BackingField_0;
+	// T System.Threading.AsyncLocalValueChangedArgs`1::<CurrentValue>k__BackingField
+	RuntimeObject* ___U3CCurrentValueU3Ek__BackingField_1;
+	// System.Boolean System.Threading.AsyncLocalValueChangedArgs`1::<ThreadContextChanged>k__BackingField
+	bool ___U3CThreadContextChangedU3Ek__BackingField_2;
 };
 
 // Unity.Collections.NativeSlice`1<UnityEngine.UIElements.UIR.Transform3x4>
@@ -31746,6 +31761,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_2__cctor_mAC1F81AD7467C1
 		return;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
