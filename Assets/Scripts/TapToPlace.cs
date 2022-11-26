@@ -13,12 +13,13 @@ public class TapToPlace : MonoBehaviour
     [SerializeField] CanvasGroup cubeClickUI;
     [SerializeField] Camera arCamera;
 
-    public GameObject gameObjectToInsatiate;
+    [SerializeField] GameObject[] gameObjectToInsatiate;
     public GameObject spawnedObject;
     ARRaycastManager arRaycastManager;
     Vector2 touchPosition;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
-    
+    private int randomIdx=0;
+
     void Awake()
     {
         arRaycastManager = GetComponent<ARRaycastManager>();
@@ -88,7 +89,8 @@ public class TapToPlace : MonoBehaviour
             var hitPose = hits[0].pose;
 
             if(spawnedObject==null){
-                spawnedObject = Instantiate(gameObjectToInsatiate, hitPose.position, hitPose.rotation);
+                if(randomIdx==5)    randomIdx = 0;
+                spawnedObject = Instantiate(gameObjectToInsatiate[randomIdx++], hitPose.position, hitPose.rotation);
                 spawnedObject.name = "cube";
                 DontDestroyOnLoad(spawnedObject);
             }

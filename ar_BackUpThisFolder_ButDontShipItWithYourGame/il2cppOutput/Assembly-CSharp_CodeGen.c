@@ -258,7 +258,113 @@ extern void WelcomeButtons_manipulateObjectClick_m8506875EB75FFFA2AC652297E6BF92
 extern void WelcomeButtons__ctor_m46A7BA660EEADEAE7F0C96DAA15BCBA616B8AB5B (void);
 // 0x0000007B System.Void WelcomeButtons::.cctor()
 extern void WelcomeButtons__cctor_mBF43C36BADF0C3B9549A2795B8E3FA4CCC5B1385 (void);
-static Il2CppMethodPointer s_methodPointers[123] = 
+// 0x0000007C System.Void PrimitivePlus.PrimitivePlusMaterial::Awake()
+extern void PrimitivePlusMaterial_Awake_m1027F76C29BA8588BD7625CD5259E6ECA35C8A86 (void);
+// 0x0000007D System.Void PrimitivePlus.PrimitivePlusMaterial::OnDestroy()
+extern void PrimitivePlusMaterial_OnDestroy_m91A81BDE05B0B7A49B0DE868EBC0AAAAD1C9D63D (void);
+// 0x0000007E System.Void PrimitivePlus.PrimitivePlusMaterial::SetNewMaterial()
+extern void PrimitivePlusMaterial_SetNewMaterial_m064ADA58C78302E4185B65A5371952E34C0BFA00 (void);
+// 0x0000007F System.Void PrimitivePlus.PrimitivePlusMaterial::SetSharedMaterial(UnityEngine.Material)
+extern void PrimitivePlusMaterial_SetSharedMaterial_mD6A15F6C589F447F1149E28000D07B7F583B179F (void);
+// 0x00000080 System.Void PrimitivePlus.PrimitivePlusMaterial::.ctor()
+extern void PrimitivePlusMaterial__ctor_m9720F3B88458BA28F3A358671B527B852E85111B (void);
+// 0x00000081 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::GetMeshType(PrimitivePlus.PrimitivePlusType)
+extern void PrimitivePlusMeshes_GetMeshType_m6DD3F9AF2FBBA2FB711D16B9F03E642C279CFB74 (void);
+// 0x00000082 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Circle2D()
+extern void PrimitivePlusMeshes_Circle2D_m9E3BEC4844E65B0509EA1E4E741E41071F4A6D3F (void);
+// 0x00000083 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::CircleHalf2D()
+extern void PrimitivePlusMeshes_CircleHalf2D_m9E07AA0BB1ACBBFCBD0B39DFF0F5A55ABE1B4FEC (void);
+// 0x00000084 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Cone()
+extern void PrimitivePlusMeshes_Cone_m084FA03A38E53E5674869FEA2C7CD531AC572D1B (void);
+// 0x00000085 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::ConeHalf()
+extern void PrimitivePlusMeshes_ConeHalf_m3536B740C5C88DB18A1BB713D9A388A6C1D60C4B (void);
+// 0x00000086 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::ConeHexagon()
+extern void PrimitivePlusMeshes_ConeHexagon_mB9B495D1C60C37F8B089D986799D0C36BA24FFF2 (void);
+// 0x00000087 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::ConePentagon()
+extern void PrimitivePlusMeshes_ConePentagon_m98383307745CAF1998F9888F4D0923C663BDC761 (void);
+// 0x00000088 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Cross()
+extern void PrimitivePlusMeshes_Cross_m07740B2A5074FEDD31826B6D854053C2EFB60530 (void);
+// 0x00000089 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Cross2D()
+extern void PrimitivePlusMeshes_Cross2D_m62756CC80F800F1A258BE625B1DB0C8625B6D598 (void);
+// 0x0000008A UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Cube()
+extern void PrimitivePlusMeshes_Cube_m67ED8D12F5EEFFBA9B5794FC53B44B5301E4E4C4 (void);
+// 0x0000008B UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::CubeCorner()
+extern void PrimitivePlusMeshes_CubeCorner_m34F48E0A2096E50804196A7FCB6BE8846BC081EE (void);
+// 0x0000008C UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::CubeCornerThin()
+extern void PrimitivePlusMeshes_CubeCornerThin_mA78F97090AC3935154509A05E24DEDD4D311F646 (void);
+// 0x0000008D UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::CubeEdgeIn()
+extern void PrimitivePlusMeshes_CubeEdgeIn_m52D51D22364A43AE09EE7450112A97FDAAACFDEC (void);
+// 0x0000008E UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::CubeEdgeOut()
+extern void PrimitivePlusMeshes_CubeEdgeOut_m221102FCF1F279C15ADED348918CE002D27F9832 (void);
+// 0x0000008F UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::CubeHollow()
+extern void PrimitivePlusMeshes_CubeHollow_m4F2F96EC6B2B7CDA532BE589A07CB62C273676E4 (void);
+// 0x00000090 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::CubeHollowThin()
+extern void PrimitivePlusMeshes_CubeHollowThin_m7F50B1B5F80940DAE74A324D4E7C6B195083C1C0 (void);
+// 0x00000091 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::CubeTube()
+extern void PrimitivePlusMeshes_CubeTube_m0B4D7854679AE76A04AF8A23FBF0519246D49785 (void);
+// 0x00000092 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Cylinder()
+extern void PrimitivePlusMeshes_Cylinder_m42E37AB7B90DC39040361DA50F6233B0FDB9A4F0 (void);
+// 0x00000093 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::CylinderHalf()
+extern void PrimitivePlusMeshes_CylinderHalf_m7D5C1AC5C05359AABF2B6E580D5AA715091DEB33 (void);
+// 0x00000094 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::CylinderTube()
+extern void PrimitivePlusMeshes_CylinderTube_m9484D3C6C8DBAF45BAD290E4F1334FC6C255171C (void);
+// 0x00000095 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::CylinderTubeThin()
+extern void PrimitivePlusMeshes_CylinderTubeThin_mC4163F9FACC793953E11916EB97EE92841592761 (void);
+// 0x00000096 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Diamond()
+extern void PrimitivePlusMeshes_Diamond_m91DAF39010FB42123FC3D74641DC6378ED01C3D9 (void);
+// 0x00000097 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::DiamondThick()
+extern void PrimitivePlusMeshes_DiamondThick_m2F9DF75EB1EDD114BA22E78F3F3A7AF11A53290E (void);
+// 0x00000098 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Heart()
+extern void PrimitivePlusMeshes_Heart_m2EBA861A536D072D35252BE58E93F5135FBF8540 (void);
+// 0x00000099 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Heart2D()
+extern void PrimitivePlusMeshes_Heart2D_m2835757136F955FF1274DEF870BAA1AAE6B822B6 (void);
+// 0x0000009A UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Hexagon2D()
+extern void PrimitivePlusMeshes_Hexagon2D_m3C48EEED53681E3447C36219CDECFCC54111AA4E (void);
+// 0x0000009B UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Icosphere()
+extern void PrimitivePlusMeshes_Icosphere_mDA329D8821860240249B469DAD18271DCB588402 (void);
+// 0x0000009C UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::IcosphereSmall()
+extern void PrimitivePlusMeshes_IcosphereSmall_mCD62B2347E6D4060CB0BE5E1F0505068E0AEECBE (void);
+// 0x0000009D UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Plane()
+extern void PrimitivePlusMeshes_Plane_mC07CF49C227B2DEACDEA51741A95DD040EF5F566 (void);
+// 0x0000009E UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::PrismHexagon()
+extern void PrimitivePlusMeshes_PrismHexagon_m65F2A51027D30602B881E5B2847F76F6FE4689C4 (void);
+// 0x0000009F UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::PrismOctagon()
+extern void PrimitivePlusMeshes_PrismOctagon_mFEC2544ABEE8234C53189785C99AAA7896D18BD6 (void);
+// 0x000000A0 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::PrismPentagon()
+extern void PrimitivePlusMeshes_PrismPentagon_mF1359414D1D3A6285F5B51EE79B0FC912DBCBB45 (void);
+// 0x000000A1 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::PrismTriangle()
+extern void PrimitivePlusMeshes_PrismTriangle_m9F242C8FAB8CDA492AF0922F2A4E42711F954904 (void);
+// 0x000000A2 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Pyramid()
+extern void PrimitivePlusMeshes_Pyramid_m93BB9D7AE308AD6A12801F0ECC264D483628EB76 (void);
+// 0x000000A3 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::PyramidCorner()
+extern void PrimitivePlusMeshes_PyramidCorner_m64FF959C252336E49C3860086F5A39176AC46E2C (void);
+// 0x000000A4 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::PyramidTri()
+extern void PrimitivePlusMeshes_PyramidTri_m7F545736B257A6633E69C22B444BE286B9D222B6 (void);
+// 0x000000A5 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Rhombus2D()
+extern void PrimitivePlusMeshes_Rhombus2D_m3BDA22A839FE02E0F3A634E1116681E3DEF00AC2 (void);
+// 0x000000A6 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Sphere()
+extern void PrimitivePlusMeshes_Sphere_m8151F681A7C02543643D31DF977958A6353E2963 (void);
+// 0x000000A7 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::SphereHalf()
+extern void PrimitivePlusMeshes_SphereHalf_mCD6A130BD85731C144C4ABD5DDA7DAC07FE634F0 (void);
+// 0x000000A8 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Star()
+extern void PrimitivePlusMeshes_Star_m9DCC736BEF073D7FE5035755AB945361D3D7B055 (void);
+// 0x000000A9 UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Star2D()
+extern void PrimitivePlusMeshes_Star2D_m802475CA2AC8E6C37058E31E43D827BE47EE5C41 (void);
+// 0x000000AA UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Torus()
+extern void PrimitivePlusMeshes_Torus_m9FDDAE66918C0DA267B9FB928AB907211E90F540 (void);
+// 0x000000AB UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::TorusHalf()
+extern void PrimitivePlusMeshes_TorusHalf_m4612EF34961B169BEDDAF8059902B4286ACE85D7 (void);
+// 0x000000AC UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Triangle2D()
+extern void PrimitivePlusMeshes_Triangle2D_m0DA5FFB6CD1B233AF2BD24AB4FB03437902B0E88 (void);
+// 0x000000AD UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::Wedge()
+extern void PrimitivePlusMeshes_Wedge_m79F4AADE60F5AD1D733BEF0F2DB7224EDF5EE588 (void);
+// 0x000000AE UnityEngine.Mesh PrimitivePlus.PrimitivePlusMeshes::GetMesh(UnityEngine.Vector3[],UnityEngine.Vector3[],UnityEngine.Vector2[],System.Int32[])
+extern void PrimitivePlusMeshes_GetMesh_mB125109D9AF866C4E0CFA5939DEE8ABAA06CF959 (void);
+// 0x000000AF System.Void PrimitivePlus.PrimitivePlusMeshes::.ctor()
+extern void PrimitivePlusMeshes__ctor_m0D590B4B9A0ABCB25C82603475BA905BB7CF724C (void);
+// 0x000000B0 UnityEngine.GameObject PrimitivePlus.PrimitivePlusObject::CreatePrimitivePlus(PrimitivePlus.PrimitivePlusType)
+extern void PrimitivePlusObject_CreatePrimitivePlus_mE5485150DD02DD34532307200CA72D4A802C1EEC (void);
+static Il2CppMethodPointer s_methodPointers[176] = 
 {
 	AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A,
 	AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF,
@@ -383,8 +489,61 @@ static Il2CppMethodPointer s_methodPointers[123] =
 	WelcomeButtons_manipulateObjectClick_m8506875EB75FFFA2AC652297E6BF928C84D1CE82,
 	WelcomeButtons__ctor_m46A7BA660EEADEAE7F0C96DAA15BCBA616B8AB5B,
 	WelcomeButtons__cctor_mBF43C36BADF0C3B9549A2795B8E3FA4CCC5B1385,
+	PrimitivePlusMaterial_Awake_m1027F76C29BA8588BD7625CD5259E6ECA35C8A86,
+	PrimitivePlusMaterial_OnDestroy_m91A81BDE05B0B7A49B0DE868EBC0AAAAD1C9D63D,
+	PrimitivePlusMaterial_SetNewMaterial_m064ADA58C78302E4185B65A5371952E34C0BFA00,
+	PrimitivePlusMaterial_SetSharedMaterial_mD6A15F6C589F447F1149E28000D07B7F583B179F,
+	PrimitivePlusMaterial__ctor_m9720F3B88458BA28F3A358671B527B852E85111B,
+	PrimitivePlusMeshes_GetMeshType_m6DD3F9AF2FBBA2FB711D16B9F03E642C279CFB74,
+	PrimitivePlusMeshes_Circle2D_m9E3BEC4844E65B0509EA1E4E741E41071F4A6D3F,
+	PrimitivePlusMeshes_CircleHalf2D_m9E07AA0BB1ACBBFCBD0B39DFF0F5A55ABE1B4FEC,
+	PrimitivePlusMeshes_Cone_m084FA03A38E53E5674869FEA2C7CD531AC572D1B,
+	PrimitivePlusMeshes_ConeHalf_m3536B740C5C88DB18A1BB713D9A388A6C1D60C4B,
+	PrimitivePlusMeshes_ConeHexagon_mB9B495D1C60C37F8B089D986799D0C36BA24FFF2,
+	PrimitivePlusMeshes_ConePentagon_m98383307745CAF1998F9888F4D0923C663BDC761,
+	PrimitivePlusMeshes_Cross_m07740B2A5074FEDD31826B6D854053C2EFB60530,
+	PrimitivePlusMeshes_Cross2D_m62756CC80F800F1A258BE625B1DB0C8625B6D598,
+	PrimitivePlusMeshes_Cube_m67ED8D12F5EEFFBA9B5794FC53B44B5301E4E4C4,
+	PrimitivePlusMeshes_CubeCorner_m34F48E0A2096E50804196A7FCB6BE8846BC081EE,
+	PrimitivePlusMeshes_CubeCornerThin_mA78F97090AC3935154509A05E24DEDD4D311F646,
+	PrimitivePlusMeshes_CubeEdgeIn_m52D51D22364A43AE09EE7450112A97FDAAACFDEC,
+	PrimitivePlusMeshes_CubeEdgeOut_m221102FCF1F279C15ADED348918CE002D27F9832,
+	PrimitivePlusMeshes_CubeHollow_m4F2F96EC6B2B7CDA532BE589A07CB62C273676E4,
+	PrimitivePlusMeshes_CubeHollowThin_m7F50B1B5F80940DAE74A324D4E7C6B195083C1C0,
+	PrimitivePlusMeshes_CubeTube_m0B4D7854679AE76A04AF8A23FBF0519246D49785,
+	PrimitivePlusMeshes_Cylinder_m42E37AB7B90DC39040361DA50F6233B0FDB9A4F0,
+	PrimitivePlusMeshes_CylinderHalf_m7D5C1AC5C05359AABF2B6E580D5AA715091DEB33,
+	PrimitivePlusMeshes_CylinderTube_m9484D3C6C8DBAF45BAD290E4F1334FC6C255171C,
+	PrimitivePlusMeshes_CylinderTubeThin_mC4163F9FACC793953E11916EB97EE92841592761,
+	PrimitivePlusMeshes_Diamond_m91DAF39010FB42123FC3D74641DC6378ED01C3D9,
+	PrimitivePlusMeshes_DiamondThick_m2F9DF75EB1EDD114BA22E78F3F3A7AF11A53290E,
+	PrimitivePlusMeshes_Heart_m2EBA861A536D072D35252BE58E93F5135FBF8540,
+	PrimitivePlusMeshes_Heart2D_m2835757136F955FF1274DEF870BAA1AAE6B822B6,
+	PrimitivePlusMeshes_Hexagon2D_m3C48EEED53681E3447C36219CDECFCC54111AA4E,
+	PrimitivePlusMeshes_Icosphere_mDA329D8821860240249B469DAD18271DCB588402,
+	PrimitivePlusMeshes_IcosphereSmall_mCD62B2347E6D4060CB0BE5E1F0505068E0AEECBE,
+	PrimitivePlusMeshes_Plane_mC07CF49C227B2DEACDEA51741A95DD040EF5F566,
+	PrimitivePlusMeshes_PrismHexagon_m65F2A51027D30602B881E5B2847F76F6FE4689C4,
+	PrimitivePlusMeshes_PrismOctagon_mFEC2544ABEE8234C53189785C99AAA7896D18BD6,
+	PrimitivePlusMeshes_PrismPentagon_mF1359414D1D3A6285F5B51EE79B0FC912DBCBB45,
+	PrimitivePlusMeshes_PrismTriangle_m9F242C8FAB8CDA492AF0922F2A4E42711F954904,
+	PrimitivePlusMeshes_Pyramid_m93BB9D7AE308AD6A12801F0ECC264D483628EB76,
+	PrimitivePlusMeshes_PyramidCorner_m64FF959C252336E49C3860086F5A39176AC46E2C,
+	PrimitivePlusMeshes_PyramidTri_m7F545736B257A6633E69C22B444BE286B9D222B6,
+	PrimitivePlusMeshes_Rhombus2D_m3BDA22A839FE02E0F3A634E1116681E3DEF00AC2,
+	PrimitivePlusMeshes_Sphere_m8151F681A7C02543643D31DF977958A6353E2963,
+	PrimitivePlusMeshes_SphereHalf_mCD6A130BD85731C144C4ABD5DDA7DAC07FE634F0,
+	PrimitivePlusMeshes_Star_m9DCC736BEF073D7FE5035755AB945361D3D7B055,
+	PrimitivePlusMeshes_Star2D_m802475CA2AC8E6C37058E31E43D827BE47EE5C41,
+	PrimitivePlusMeshes_Torus_m9FDDAE66918C0DA267B9FB928AB907211E90F540,
+	PrimitivePlusMeshes_TorusHalf_m4612EF34961B169BEDDAF8059902B4286ACE85D7,
+	PrimitivePlusMeshes_Triangle2D_m0DA5FFB6CD1B233AF2BD24AB4FB03437902B0E88,
+	PrimitivePlusMeshes_Wedge_m79F4AADE60F5AD1D733BEF0F2DB7224EDF5EE588,
+	PrimitivePlusMeshes_GetMesh_mB125109D9AF866C4E0CFA5939DEE8ABAA06CF959,
+	PrimitivePlusMeshes__ctor_m0D590B4B9A0ABCB25C82603475BA905BB7CF724C,
+	PrimitivePlusObject_CreatePrimitivePlus_mE5485150DD02DD34532307200CA72D4A802C1EEC,
 };
-static const int32_t s_InvokerIndices[123] = 
+static const int32_t s_InvokerIndices[176] = 
 {
 	6336,
 	5156,
@@ -509,12 +668,65 @@ static const int32_t s_InvokerIndices[123] =
 	6448,
 	6448,
 	11291,
+	6448,
+	6448,
+	6448,
+	5156,
+	6448,
+	10889,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	11251,
+	8730,
+	6448,
+	10889,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	123,
+	176,
 	s_methodPointers,
 	0,
 	NULL,
