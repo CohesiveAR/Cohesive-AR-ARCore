@@ -32,8 +32,9 @@ public class RotateTextures : MonoBehaviour
         if(cube==null){
             return;
         }
-        factor = (1-factor)*5;
-        cube.GetComponent<Renderer>().material.mainTextureScale = new Vector2(factor, factor);
+        factor = (1-factor)*10;
+        // cube.GetComponent<Renderer>().material.mainTextureScale = new Vector2(factor*2, factor*10);
+        cube.GetComponent<Renderer>().material.SetFloat("_Scale", factor);
     }
     public void RotateImage(float angle)
     {
@@ -44,43 +45,7 @@ public class RotateTextures : MonoBehaviour
             return;
         }
 
-        try{
-        int oldX;
-        int oldY;
-        int width = originTexture.width;
-        int height = originTexture.height;
-
-        Color32[] originPixels = originTexture.GetPixels32();
-        Color32[] transformedPixels = originTexture.GetPixels32();
-        float phi = (float)(angle *Math.PI);
-
-        for (int newY = 0; newY < height; newY++)
-        {
-            for (int newX = 0; newX < width; newX++)
-            {
-                transformedPixels[newY * width + newX] = originPixels[0];
-                int newXNormToCenter = newX - width / 2;
-                int newYNormToCenter = newY - height / 2;
-                oldX = (int)(Mathf.Cos(phi) * newXNormToCenter + Mathf.Sin(phi) * newYNormToCenter + width / 2);
-                oldY = (int)(-Mathf.Sin(phi) * newXNormToCenter + Mathf.Cos(phi) * newYNormToCenter + height / 2);
-                bool InsideImageBounds = (oldX > -1) && (oldX < width) && (oldY > -1) && (oldY < height);
-
-                if (InsideImageBounds)
-                {
-                    transformedPixels[newY * width + newX] = originPixels[oldY * width + oldX];
-                }
-            }
-        }
-
-        Texture2D result = new Texture2D(width, height);
-        result.SetPixels32(transformedPixels);
-        result.Apply();
-        cube.GetComponent<Renderer>().material.SetTexture("_MainTex", result);
-        }
-        catch(Exception ex)
-        {
-            Debug.Log("Error info:" + ex.Message);
-        }
+        cube.GetComponent<Renderer>().material.SetFloat("_RotateAngle", angle*2*Mathf.PI);
     }
 
     

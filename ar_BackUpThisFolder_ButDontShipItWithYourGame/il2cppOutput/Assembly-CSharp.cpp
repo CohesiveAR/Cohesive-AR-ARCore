@@ -471,7 +471,6 @@ IL2CPP_EXTERN_C RuntimeClass* Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_
 IL2CPP_EXTERN_C RuntimeClass* Core_t5CB657C811F686A6605FA45AE3A981DFEF1745D7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CvType_tBA09B794CDA34D79A6D254E7828D859F01ED376E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t0754071572EFE7A5C92A59495D2524FC935364E3_il2cpp_TypeInfo_var;
@@ -526,7 +525,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral1363FDB5F6B2CF4F4432D9132C5311E746724AC3
 IL2CPP_EXTERN_C String_t* _stringLiteral14403A9979B497BDEB12080278474BFAF7878904;
 IL2CPP_EXTERN_C String_t* _stringLiteral17C94A273CD9895C291C7316C45C2623E2DCEABE;
 IL2CPP_EXTERN_C String_t* _stringLiteral1D1FB2DC7CAD729707183455C8543381FABBFC1C;
-IL2CPP_EXTERN_C String_t* _stringLiteral2251936D5A60FD29E18326462F98EE7A0B4FA259;
 IL2CPP_EXTERN_C String_t* _stringLiteral23FBA1662415F9147A7AA68BFEF0AFB4610E9407;
 IL2CPP_EXTERN_C String_t* _stringLiteral2624FBEAED8BB4B54ABE567071438548399E98DC;
 IL2CPP_EXTERN_C String_t* _stringLiteral2C2589E4CF6169D30EC06855BBD020BA25172B25;
@@ -564,6 +562,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralABCE1EE7608201E9640E96C9332D0D1B4D1B854C
 IL2CPP_EXTERN_C String_t* _stringLiteralAD9105C6C488B102E3AA437F000C28E7BD66B4E5;
 IL2CPP_EXTERN_C String_t* _stringLiteralADA5DB2E05775E5994F4ACE1B7005BD0F794F2AD;
 IL2CPP_EXTERN_C String_t* _stringLiteralAF942EC2B5A4A81D8EAE5C490C0E50108EB58845;
+IL2CPP_EXTERN_C String_t* _stringLiteralB2A2A23C0F95CC4BF23BDB0980D559F59E054C4B;
 IL2CPP_EXTERN_C String_t* _stringLiteralB2F82FA77BACC10BEADF8A178CA864BB92795202;
 IL2CPP_EXTERN_C String_t* _stringLiteralBDBB8D317096A0BA6BA9463FC2533707873DF8FD;
 IL2CPP_EXTERN_C String_t* _stringLiteralBF2C620595163AC7B67C935A7DAC457BAAB801F6;
@@ -667,7 +666,6 @@ struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
 
 struct ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389;
-struct Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259;
 struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
@@ -5037,39 +5035,6 @@ struct ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389  : public RuntimeAr
 		m_Items[index] = value;
 	}
 };
-// UnityEngine.Color32[]
-struct Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259  : public RuntimeArray
-{
-	ALIGN_FIELD (8) Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B m_Items[1];
-
-	inline Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B* GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B* GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B value)
-	{
-		m_Items[index] = value;
-	}
-};
 // UnityEngine.GameObject[]
 struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF  : public RuntimeArray
 {
@@ -5840,12 +5805,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_SmoothStep_mEFDC738EB0AA162D71013BDBBDD157B080A8E524_inline (float ___from0, float ___to1, float ___t2, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::Lerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, float ___t2, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Material::set_mainTextureScale(UnityEngine.Vector2)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_mainTextureScale_mABC2B4327CCDC6BB0E0EA72C6F29817400F56EF1 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___value0, const RuntimeMethod* method) ;
-// UnityEngine.Color32[] UnityEngine.Texture2D::GetPixels32()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* Texture2D_GetPixels32_m48230192E7543765C1A517F251D1D9BFCFB58C3D (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Texture2D::SetPixels32(UnityEngine.Color32[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Texture2D_SetPixels32_m169F9873A21FB8DECA24DC1B8F06FB23D13BEE2A (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* __this, Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* ___colors0, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponentInChildren<UnityEngine.AudioSource>()
 inline AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* Component_GetComponentInChildren_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m1C7B25F09C77FF7717570FD809CF0037D9971C6A (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
 {
@@ -10915,6 +10874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotateTextures_scale_mD62AB2EBE15F745385
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisTapToPlace_tA18834A9A13194DA0FAE0DA624F295550AB42A38_m07A1FACB4A11EDECCEA3FD4BBAA264BBB7796BF9_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB2A2A23C0F95CC4BF23BDB0980D559F59E054C4B);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -10960,10 +10920,10 @@ IL_0024:
 
 IL_0033:
 	{
-		// factor = (1-factor)*5;
+		// factor = (1-factor)*10;
 		float L_7 = ___factor0;
-		___factor0 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract((1.0f), L_7)), (5.0f)));
-		// cube.GetComponent<Renderer>().material.mainTextureScale = new Vector2(factor, factor);
+		___factor0 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract((1.0f), L_7)), (10.0f)));
+		// cube.GetComponent<Renderer>().material.SetFloat("_Scale", factor);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___cube_4;
 		NullCheck(L_8);
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_9;
@@ -10972,12 +10932,8 @@ IL_0033:
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_10;
 		L_10 = Renderer_get_material_m5BA2A00816C4CC66580D4B2E409CF10718C15656(L_9, NULL);
 		float L_11 = ___factor0;
-		float L_12 = ___factor0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13;
-		memset((&L_13), 0, sizeof(L_13));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_13), L_11, L_12, /*hidden argument*/NULL);
 		NullCheck(L_10);
-		Material_set_mainTextureScale_mABC2B4327CCDC6BB0E0EA72C6F29817400F56EF1(L_10, L_13, NULL);
+		Material_SetFloat_m879CF81D740BAE6F23C9822400679F4D16365836(L_10, _stringLiteralB2A2A23C0F95CC4BF23BDB0980D559F59E054C4B, L_11, NULL);
 		// }
 		return;
 	}
@@ -10991,25 +10947,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotateTextures_RotateImage_m9DA30EACF397
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisTapToPlace_tA18834A9A13194DA0FAE0DA624F295550AB42A38_m07A1FACB4A11EDECCEA3FD4BBAA264BBB7796BF9_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4B8146FB95E4F51B29DA41EB5F6D60F8FD0ECF21);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFD1E70C6A2B1131F928EF27C6A37C00FEF94B913);
 		s_Il2CppMethodInitialized = true;
 	}
-	int32_t V_0 = 0;
-	int32_t V_1 = 0;
-	int32_t V_2 = 0;
-	int32_t V_3 = 0;
-	Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* V_4 = NULL;
-	Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* V_5 = NULL;
-	float V_6 = 0.0f;
-	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* V_7 = NULL;
-	int32_t V_8 = 0;
-	int32_t V_9 = 0;
-	int32_t V_10 = 0;
-	int32_t V_11 = 0;
-	Exception_t* V_12 = NULL;
-	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
-	int32_t G_B12_0 = 0;
 	{
 		// if(cube==null){
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___cube_4;
@@ -11053,246 +10993,17 @@ IL_0024:
 
 IL_0033:
 	{
-	}
-	try
-	{// begin try (depth: 1)
-		{
-			// int width = originTexture.width;
-			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_7 = __this->___originTexture_7;
-			NullCheck(L_7);
-			int32_t L_8;
-			L_8 = VirtualFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_7);
-			V_2 = L_8;
-			// int height = originTexture.height;
-			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_9 = __this->___originTexture_7;
-			NullCheck(L_9);
-			int32_t L_10;
-			L_10 = VirtualFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_9);
-			V_3 = L_10;
-			// Color32[] originPixels = originTexture.GetPixels32();
-			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_11 = __this->___originTexture_7;
-			NullCheck(L_11);
-			Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_12;
-			L_12 = Texture2D_GetPixels32_m48230192E7543765C1A517F251D1D9BFCFB58C3D(L_11, NULL);
-			V_4 = L_12;
-			// Color32[] transformedPixels = originTexture.GetPixels32();
-			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_13 = __this->___originTexture_7;
-			NullCheck(L_13);
-			Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_14;
-			L_14 = Texture2D_GetPixels32_m48230192E7543765C1A517F251D1D9BFCFB58C3D(L_13, NULL);
-			V_5 = L_14;
-			// float phi = (float)(angle *Math.PI);
-			float L_15 = ___angle0;
-			V_6 = ((float)((double)il2cpp_codegen_multiply(((double)L_15), (3.1415926535897931))));
-			// for (int newY = 0; newY < height; newY++)
-			V_8 = 0;
-			goto IL_012b_1;
-		}
-
-IL_007d_1:
-		{
-			// for (int newX = 0; newX < width; newX++)
-			V_9 = 0;
-			goto IL_011d_1;
-		}
-
-IL_0085_1:
-		{
-			// transformedPixels[newY * width + newX] = originPixels[0];
-			Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_16 = V_5;
-			int32_t L_17 = V_8;
-			int32_t L_18 = V_2;
-			int32_t L_19 = V_9;
-			Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_20 = V_4;
-			NullCheck(L_20);
-			int32_t L_21 = 0;
-			Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_22 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_21));
-			NullCheck(L_16);
-			(L_16)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_17, L_18)), L_19))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_22);
-			// int newXNormToCenter = newX - width / 2;
-			int32_t L_23 = V_9;
-			int32_t L_24 = V_2;
-			V_10 = ((int32_t)il2cpp_codegen_subtract(L_23, ((int32_t)(L_24/2))));
-			// int newYNormToCenter = newY - height / 2;
-			int32_t L_25 = V_8;
-			int32_t L_26 = V_3;
-			V_11 = ((int32_t)il2cpp_codegen_subtract(L_25, ((int32_t)(L_26/2))));
-			// oldX = (int)(Mathf.Cos(phi) * newXNormToCenter + Mathf.Sin(phi) * newYNormToCenter + width / 2);
-			float L_27 = V_6;
-			float L_28;
-			L_28 = cosf(L_27);
-			int32_t L_29 = V_10;
-			float L_30 = V_6;
-			float L_31;
-			L_31 = sinf(L_30);
-			int32_t L_32 = V_11;
-			int32_t L_33 = V_2;
-			V_0 = il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_28, ((float)L_29))), ((float)il2cpp_codegen_multiply(L_31, ((float)L_32))))), ((float)((int32_t)(L_33/2))))));
-			// oldY = (int)(-Mathf.Sin(phi) * newXNormToCenter + Mathf.Cos(phi) * newYNormToCenter + height / 2);
-			float L_34 = V_6;
-			float L_35;
-			L_35 = sinf(L_34);
-			int32_t L_36 = V_10;
-			float L_37 = V_6;
-			float L_38;
-			L_38 = cosf(L_37);
-			int32_t L_39 = V_11;
-			int32_t L_40 = V_3;
-			V_1 = il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((-L_35)), ((float)L_36))), ((float)il2cpp_codegen_multiply(L_38, ((float)L_39))))), ((float)((int32_t)(L_40/2))))));
-			// bool InsideImageBounds = (oldX > -1) && (oldX < width) && (oldY > -1) && (oldY < height);
-			int32_t L_41 = V_0;
-			if ((((int32_t)L_41) <= ((int32_t)(-1))))
-			{
-				goto IL_00fa_1;
-			}
-		}
-		{
-			int32_t L_42 = V_0;
-			int32_t L_43 = V_2;
-			if ((((int32_t)L_42) >= ((int32_t)L_43)))
-			{
-				goto IL_00fa_1;
-			}
-		}
-		{
-			int32_t L_44 = V_1;
-			if ((((int32_t)L_44) <= ((int32_t)(-1))))
-			{
-				goto IL_00fa_1;
-			}
-		}
-		{
-			int32_t L_45 = V_1;
-			int32_t L_46 = V_3;
-			G_B12_0 = ((((int32_t)L_45) < ((int32_t)L_46))? 1 : 0);
-			goto IL_00fb_1;
-		}
-
-IL_00fa_1:
-		{
-			G_B12_0 = 0;
-		}
-
-IL_00fb_1:
-		{
-			// if (InsideImageBounds)
-			if (!G_B12_0)
-			{
-				goto IL_0117_1;
-			}
-		}
-		{
-			// transformedPixels[newY * width + newX] = originPixels[oldY * width + oldX];
-			Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_47 = V_5;
-			int32_t L_48 = V_8;
-			int32_t L_49 = V_2;
-			int32_t L_50 = V_9;
-			Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_51 = V_4;
-			int32_t L_52 = V_1;
-			int32_t L_53 = V_2;
-			int32_t L_54 = V_0;
-			NullCheck(L_51);
-			int32_t L_55 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_52, L_53)), L_54));
-			Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_56 = (L_51)->GetAt(static_cast<il2cpp_array_size_t>(L_55));
-			NullCheck(L_47);
-			(L_47)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_48, L_49)), L_50))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_56);
-		}
-
-IL_0117_1:
-		{
-			// for (int newX = 0; newX < width; newX++)
-			int32_t L_57 = V_9;
-			V_9 = ((int32_t)il2cpp_codegen_add(L_57, 1));
-		}
-
-IL_011d_1:
-		{
-			// for (int newX = 0; newX < width; newX++)
-			int32_t L_58 = V_9;
-			int32_t L_59 = V_2;
-			if ((((int32_t)L_58) < ((int32_t)L_59)))
-			{
-				goto IL_0085_1;
-			}
-		}
-		{
-			// for (int newY = 0; newY < height; newY++)
-			int32_t L_60 = V_8;
-			V_8 = ((int32_t)il2cpp_codegen_add(L_60, 1));
-		}
-
-IL_012b_1:
-		{
-			// for (int newY = 0; newY < height; newY++)
-			int32_t L_61 = V_8;
-			int32_t L_62 = V_3;
-			if ((((int32_t)L_61) < ((int32_t)L_62)))
-			{
-				goto IL_007d_1;
-			}
-		}
-		{
-			// Texture2D result = new Texture2D(width, height);
-			int32_t L_63 = V_2;
-			int32_t L_64 = V_3;
-			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_65 = (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4*)il2cpp_codegen_object_new(Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var);
-			NullCheck(L_65);
-			Texture2D__ctor_m3BA82E87442B7F69E118477069AE11101B9DF796(L_65, L_63, L_64, NULL);
-			V_7 = L_65;
-			// result.SetPixels32(transformedPixels);
-			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_66 = V_7;
-			Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_67 = V_5;
-			NullCheck(L_66);
-			Texture2D_SetPixels32_m169F9873A21FB8DECA24DC1B8F06FB23D13BEE2A(L_66, L_67, NULL);
-			// result.Apply();
-			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_68 = V_7;
-			NullCheck(L_68);
-			Texture2D_Apply_mA014182C9EE0BBF6EEE3B286854F29E50EB972DC(L_68, NULL);
-			// cube.GetComponent<Renderer>().material.SetTexture("_MainTex", result);
-			GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_69 = __this->___cube_4;
-			NullCheck(L_69);
-			Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_70;
-			L_70 = GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A(L_69, GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A_RuntimeMethod_var);
-			NullCheck(L_70);
-			Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_71;
-			L_71 = Renderer_get_material_m5BA2A00816C4CC66580D4B2E409CF10718C15656(L_70, NULL);
-			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_72 = V_7;
-			NullCheck(L_71);
-			Material_SetTexture_m06083C3F52EF02FFB1177901D9907314F280F9A5(L_71, _stringLiteral4B8146FB95E4F51B29DA41EB5F6D60F8FD0ECF21, L_72, NULL);
-			// }
-			goto IL_0184;
-		}
-	}// end try (depth: 1)
-	catch(Il2CppExceptionWrapper& e)
-	{
-		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
-		{
-			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_016a;
-		}
-		throw e;
-	}
-
-CATCH_016a:
-	{// begin catch(System.Exception)
-		// catch(Exception ex)
-		V_12 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
-		// Debug.Log("Error info:" + ex.Message);
-		Exception_t* L_73 = V_12;
-		NullCheck(L_73);
-		String_t* L_74;
-		L_74 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_73);
-		String_t* L_75;
-		L_75 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral2251936D5A60FD29E18326462F98EE7A0B4FA259)), L_74, NULL);
-		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_75, NULL);
-		// }
-		IL2CPP_POP_ACTIVE_EXCEPTION();
-		goto IL_0184;
-	}// end catch (depth: 1)
-
-IL_0184:
-	{
+		// cube.GetComponent<Renderer>().material.SetFloat("_RotateAngle", angle*2*Mathf.PI);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___cube_4;
+		NullCheck(L_7);
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_8;
+		L_8 = GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A(L_7, GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A_RuntimeMethod_var);
+		NullCheck(L_8);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_9;
+		L_9 = Renderer_get_material_m5BA2A00816C4CC66580D4B2E409CF10718C15656(L_8, NULL);
+		float L_10 = ___angle0;
+		NullCheck(L_9);
+		Material_SetFloat_m879CF81D740BAE6F23C9822400679F4D16365836(L_9, _stringLiteralFD1E70C6A2B1131F928EF27C6A37C00FEF94B913, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_10, (2.0f))), (3.14159274f))), NULL);
 		// }
 		return;
 	}
